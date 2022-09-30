@@ -201,8 +201,8 @@ const demo =  document.getElementById('demo')
 
 
 /****** ACTIVE LEARNING - SIZING A CANVAS BOX ******/
-const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
+// const canvas = document.getElementById('canvas')
+// const ctx = canvas.getContext('2d')
 
 // x
 // Change the line that calculates x so the box is still 50px wide, but the 50 is calculated using the numbers 43 and 7 and an arithmetic operator.
@@ -213,9 +213,9 @@ const ctx = canvas.getContext('2d')
 // let x = 750 % 500
 
 // Change the line that calculates x so the box is 200px wide, but the 200 is calculated using the number 4 and an assignment operator.
-let x = 4
-x *= 50
-console.log(x);
+// let x = 4
+// x *= 50
+// console.log(x);
 
 
 // y
@@ -228,16 +228,211 @@ console.log(x);
 // console.log(y);
 
 // Change the line that calculates y so the box is 200px high, but the 200 is calculated using the numbers 50 and 3, the multiplication operator, and the addition assignment operator.
-let y = 50 * 3
-y += 50
-console.log(y);
+// let y = 50 * 3
+// y += 50
+// console.log(y);
 
 
-ctx.fillStyle = "#a0eade"
-ctx.fillRect(10, 10, x, y)
+// ctx.fillStyle = "#a0eade"
+// ctx.fillRect(10, 10, x, y)
 // .fillRect() method - places its top-left corner at (10, 10) / - and gives it size 50(x) width and 50(y) height
 
 
 
 /****** COMPARISON OPERATORS ******/
-// strict equal
+// strict equal - ===
+// let a = 5 === 2 + 4
+// console.log(a);
+
+// strict non-equal
+// let a = 5 !== 2 + 4
+// console.log(a);
+
+// less than - <
+// let a = 10
+// let b = 5
+// console.log(a < b);
+// demo.innerHTML = a < b
+
+
+// greater than - >
+// console.log(10 > 20)
+
+
+// less than or equal to - <=
+// let a = 3
+// let b = 2
+// console.log(3 <= 2);
+// demo.innerHTML = 3 <= 2
+
+
+// greater than or equal to - >=
+// let a = 3
+// let b = 2
+// console.log(3 >= 2);
+// demo.innerHTML = 3 >= 2
+
+// strict versions === !== test the equality of both the values and their datatypes
+// The strict versions tend to result in fewer errors, so it's recommended to use these
+
+
+
+
+// Booleans
+// === in this case we are testing weather the text content of a button contains a certain string
+// but it is the same principal at work
+// such a control that swaps between two states is a referred as a toggle
+// const btn = document.querySelector('button')
+// const txt = document.querySelector('p')
+
+// btn.addEventListener('click', updateBtn)
+
+// function updateBtn() {
+//   if(btn.textContent === 'Start machine') {
+//     btn.textContent = 'Stop Machine'
+//     txt.textContent = 'The machine has started!'
+//   } else {
+//     btn.textContent = 'Start Machine'
+//     txt.textContent = 'The machine is stopped.'
+//   }
+// }
+
+
+
+// TEST MATH SKILLS
+
+// Math 1
+// let finalResult;
+
+// let evenOddResult;
+
+// // Add your code here
+
+// const section = document.querySelector('section')
+
+// const firstNum = 12
+// const secondNum = 12
+// const thirdNum = -1
+// const fourthNum = 1
+
+// const addFirstSecond = firstNum + secondNum
+// console.log(addFirstSecond);
+
+// const subFourthFromThird = fourthNum - thirdNum
+// console.log(subFourthFromThird);
+
+// finalResult = addFirstSecond * subFourthFromThird
+// console.log(finalResult);
+
+// evenOddResult = finalResult % 2 === 0
+// console.log(evenOddResult);
+
+// // Don't edit the code below here!
+
+// section.innerHTML = ' ';
+// const para1 = document.createElement('p');
+// const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${ finalResult }`;
+// para1.textContent = `Is the finalResult 48? ${ finalResultCheck }`;
+// const para2 = document.createElement('p');
+// const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even!' : 'The final result is odd. Hrm.';
+// para2.textContent = evenOddResultCheck;
+
+// section.appendChild(para1);
+// section.appendChild(para2);
+
+
+
+// Math 2
+// Final result should be 10.42
+
+// Add/update your code here
+// const section = document.querySelector('section')
+
+// let result = 7 + 13 / 9 + 7;
+// console.log(result);
+
+// let result2 = 100 / 2 * 6;
+// console.log(result2);
+
+// // result = result * result2
+// // console.log(result);
+
+// result *= result2
+// console.log(result);
+
+// finalResult = result
+// // console.log(finalResult);
+
+// finalResult %= finalResult - 10.42
+// console.log(finalResult);
+// console.log(typeof(finalResult));
+
+
+// finalResult = finalResult.toFixed(2)
+// console.log(finalResult);
+// console.log(typeof(finalResult));
+
+
+// const finalNumber = Number(finalResult);
+// console.log(finalNumber);
+// console.log(typeof(finalNumber));
+
+
+// // Don't edit the code below here!
+
+// section.innerHTML = ' ';
+// const para1 = document.createElement('p');
+// para1.textContent = `Your finalResult is ${ finalResult }`;
+// const para2 = document.createElement('p');
+// const finalNumberCheck = isNaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : `Ooops! finalNumber is not a number.`;
+// para2.textContent = finalNumberCheck;
+
+// section.appendChild(para1);
+// section.appendChild(para2);
+
+
+
+// Math 3
+
+
+// Statement 1: The elephant weighs less than the mouse
+const eleWeight = 1000;
+const mouseWeight = 2;
+
+// Statement 2: The Ostrich is taller than the duck
+const ostrichHeight = 2;
+const duckHeight = 0.3;
+
+// Statement 3: The two passwords match
+const pwd1 = 'stromboli';
+const pwd2 = 'stROmBoLi';
+
+// Add your code here
+const section = document.querySelector('section')
+
+const weightComparison = eleWeight <= mouseWeight
+console.log(weightComparison);
+
+const heightComparison = duckHeight <= ostrichHeight
+console.log(heightComparison);
+
+const pwdMatch = pwd1 === pwd2
+console.log(pwdMatch);
+
+// Don't edit the code below here!
+
+section.innerHTML = ' ';
+const para1 = document.createElement('p');
+const para2 = document.createElement('p');
+const para3 = document.createElement('p');
+
+const weightTest = weightComparison ? 'True — elephants weigh less than mice!?' : 'False — of course an elephant is heavier than a mouse!';
+const heightTest = heightComparison ? 'True — an ostrich is indeed taller than a duck!' : 'False — apparently a duck is taller than an ostrich!?';
+const pwdTest = pwdMatch ? 'True — the passwords match.' : 'False — the passwords do not match; please check them';
+
+para1.textContent = weightTest;
+section.appendChild(para1);
+para2.textContent = heightTest;
+section.appendChild(para2);
+para3.textContent = pwdTest;
+section.appendChild(para3);

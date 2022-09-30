@@ -22,7 +22,9 @@ a {
   color: #5c6784;
 }
 
-.demo {
+.demo,
+.booleans,
+#preview {
   background-color: #5c6784;
   color: #fceade;
   padding: 20px 30px;
@@ -47,10 +49,23 @@ p#demo-second {
 h3 {
   padding: 6px 12px;
 }
+
 .canvas {
   background-color: #5c6784;
   color: #a0eade;
   border-radius: 10px;
   padding: 20px 30px;
+}
 
+.button {
+  padding: 6px 12px;
+  margin: 6px 12px;
+  border-radius: 10px;
+  background-color: #a0eade;
+}
+
+#preview {
+  width: 400px;
+  height: 200px;
+  color: #a0eade;
 }
