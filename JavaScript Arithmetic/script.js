@@ -107,8 +107,8 @@ y = 5
 // console.log(x);
 // demo.innerHTML = x
 x *= y
-console.log(x);
-demo.innerHTML = x
+// console.log(x);
+// demo.innerHTML = x
 
 // let length = 16;          // number
 
@@ -225,15 +225,18 @@ demo.innerHTML = x
 
 // NaN - Not a number
 // demoSecond.innerHTML = 100 / 'Apple'
+// console.log(100 / 'Apple');
 
 // A number divided by a numeric string becomes a number
 // demoSecond.innerHTML = 100 / '10'
+// console.log(100 / '10');
 
 // Use the global JavaScript function isNaN() to find out if a value is not a number
 // let m = 100 / 'Apple'
+// console.log(isNaN(m));
 // demoSecond.innerHTML = isNaN(m)
 
-// If using a NaN in a mathematical operation, the result will also be Nan
+// If using a NaN in a mathematical operation, the result will also be NaN
 // let m = NaN
 // let n = 5
 // demoSecond.innerHTML = m + n
@@ -243,6 +246,7 @@ demo.innerHTML = x
 // let m = NaN
 // let n = '5'
 // demoSecond.innerHTML = m + n
+// console.log(m + n);
 
 // The typeof NaN is number
 // let m = NaN
@@ -258,7 +262,6 @@ demo.innerHTML = x
 //   myNumber = myNumber * myNumber
 //   txt = txt + myNumber + '<br>'
 // }
-
 // demoSecond.innerHTML = txt
 // console.log(txt);
 
